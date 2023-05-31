@@ -1,0 +1,496 @@
+@font-face {
+    font-family: "Roboto";
+    src: url(../fonts/Roboto-Regular.ttf);
+    font-weight: 400
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url(../fonts/Roboto-Bold.ttf);
+    font-weight: 700
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url(../fonts/Roboto-Medium.ttf);
+    font-weight: 500
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url(../fonts/Roboto-Italic.ttf);
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url(../fonts/Roboto-MediumItalic.ttf);
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url(../fonts/Roboto-ThinItalic.ttf);
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "fontawesome";
+    src: url(../fonts/fontawesome-regular.ttf);
+    font-weight: 400
+}
+
+@font-face {
+    font-family: "fontawesome";
+    src: url(../fonts/fontawesome-light.ttf);
+    font-weight: 300
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box
+}
+
+a {
+    text-decoration: none;
+    color: inherit
+}
+
+ul {
+    list-style: none
+}
+
+body {
+    font-family: "Roboto";
+    background: #f1f1f1;
+    color: #000;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 720px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+::before {
+    font-family: "fontawesome"
+}
+
+.icon-back::before {
+    content: "/f053";
+    font-size: 19px
+}
+
+.icon-plus::before {
+    content: "/f067";
+    font-size: 18px
+}
+
+.cntr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100vh;
+    padding-bottom: 80px;
+}
+
+.header .container {
+    display: flex;
+}
+
+.first-desc {
+    color: #000;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 140%;
+    margin-top: 52px;
+    margin-bottom: 80px;
+}
+
+.links {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.links__link {
+    display: block;
+    max-width: 150px;
+    width: 100%;
+    padding: 10px 15px;
+    color: white;
+    background: #276ED8;
+    box-shadow: 0px 4px 12px rgba(41, 24, 111, 0.2);
+    border-radius: 10px;
+    text-align: center;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.reg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.reg-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.reg-form input {
+    border: none;
+    outline: none;
+    padding: 8px 15px;
+    margin-bottom: 30px;
+    background: none;
+    border-bottom: 1px solid #000;
+}
+
+.reg-form button {
+    max-width: 150px;
+    width: 100%;
+    padding: 10px 15px;
+    color: white;
+    background: #276ED8;
+    box-shadow: 0px 4px 12px rgba(41, 24, 111, 0.2);
+    border-radius: 10px;
+    text-align: center;
+    font-style: italic;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    margin-bottom: 50px;
+}
+
+.skip {
+    display: inline-block;
+    align-self: flex-end;
+    margin-right: 15px;
+}
+
+.main {
+    margin-top: 40px;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    width: 100%;
+    padding: 10px 25px;
+    border-radius: 10px;
+    margin-bottom: 32px;
+    display: flex;
+    align-items: center;
+    min-height: 80px;
+}
+
+.emergency {
+    background: #FF7171;
+}
+
+.med-history {
+    background: #8159F2;
+}
+
+.prescription {
+    background: #59A4F2;
+}
+
+.call-doc {
+    background: rgba(23, 166, 0, 0.78);
+}
+
+.card__desc {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 140%;
+    color: #FFFFFF;
+    margin-bottom: 2px;
+}
+
+.card__title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    color: #FFFFFF;
+}
+
+.card-icon {
+    margin-right: 20px;
+}
+
+.em-card {
+    margin-bottom: 40px;
+}
+
+.em-card__title {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 140%;
+    margin-bottom: 25px;
+}
+
+.header {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.header__title {
+    font-style: italic;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 140%;
+    margin: 0 auto;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.em-link {
+    width: 90%;
+    padding: 10px 25px;
+    border-radius: 10px;
+    margin-bottom: 32px;
+    display: flex;
+    align-items: center;
+    min-height: 80px;
+    background: rgba(23, 166, 0, 0.78);
+}
+
+.em-img {
+    margin-right: 15px;
+}
+
+.footer {
+    margin-top: 150px;
+    padding-bottom: 20px;
+}
+
+.footer__title {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 140%;
+    margin-bottom: 25px;
+}
+
+.numbers {
+    display: flex;
+}
+
+.add {
+    width: 83px;
+    height: 83px;
+    display: inline-block;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px dashed #F1564A;
+    border-radius: 10px;
+}
+
+.home {
+    width: 200px;
+    padding: 10px 25px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    min-height: 80px;
+    background: #59A4F2;
+}
+
+.home span {
+    font-weight: 500;
+    line-height: 140%;
+    color: #FFFFFF;
+    margin-left: 10px;
+}
+
+.title {
+    font-style: italic;
+    font-weight: 100;
+    font-size: 36px;
+    line-height: 140%;
+    margin-bottom: 32px;
+}
+
+.vizov {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.vizov__numb {
+    font-style: italic;
+    font-weight: 100;
+    font-size: 41px;
+    line-height: 140%;
+}
+
+.vizov__link {
+    text-align: center;
+    width: 150px;
+    padding: 12px;
+    background: #F1564A;
+    border-radius: 10px;
+    color: white;
+}
+
+.tel-desc {
+    margin-bottom: 15px;
+}
+
+.reason {
+    font-style: italic;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 140%;
+    margin-bottom: 24px;
+}
+
+.reason-list {
+    list-style: disc;
+    margin-left: 10px;
+}
+
+.add-num {
+    display: flex;
+    flex-direction: column;
+}
+
+.add-num__lab {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+
+.add-num__lab:last-of-type {
+    margin-bottom: 40px;
+}
+
+.add-num__lab span {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 140%;
+    margin-bottom: 12px;
+}
+
+.add-num__input {
+    border: none;
+    outline: none;
+    padding: 8px 15px;
+    background: none;
+    border-bottom: 1px solid #000;
+}
+
+.add-btn {
+    width: 100%;
+    padding: 12px;
+    background: #59A4F2;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 25px;
+    border: none;
+    outline: none;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 140%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: white;
+}
+
+.main-title {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 140%;
+    margin-bottom: 26px;
+}
+
+.loc {
+    width: 100%;
+    height: 90vh;
+}
+
+.recept {
+    background: rgba(237, 198, 97, 0.85);
+}
+
+.color1 {
+    background: #ADE2FF;
+}
+
+.color2 {
+    background: #FFC0F5;
+}
+
+.med-card {
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 13px 15px 17px;
+    margin-bottom: 24px;
+}
+
+.med-card:last-of-type {
+    margin-bottom: 60px;
+}
+
+.date {
+    color: #000;
+    align-self: flex-end;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 140%;
+}
+
+.med-card__title {
+    font-style: italic;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 140%;
+    margin-bottom: 12px;
+}
+
+.med-card__desc {
+    font-style: italic;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 140%;
+    margin-bottom: 13px;
+}
+
+.podpis {
+    color: #000;
+    align-self: flex-end;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+}

@@ -1,0 +1,27 @@
+@media(max-width: 768px) {
+    .container {
+        max-width: 576px
+    }
+}
+
+@media(max-width: 576px) {
+    .container {
+        width: 100%;
+    }
+
+    .first-desc {
+        font-size: 18px;
+    }
+
+    .links {
+        width: 100%;
+    }
+    
+    .cntr {
+        padding-bottom: 60px;
+    }
+
+    .em-link {
+        width: 100%;
+    }
+}
